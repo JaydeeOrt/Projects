@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jaydee\\Documents\\1# School\\2025 Fall Programs\\JOrtizLinkedListLab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA74D44C-4CA0-43DE-BC12-78D7C9A6C1C5}|JOrtizLinkedListLab.csproj|c:\\users\\jaydee\\documents\\1# school\\2025 fall programs\\jortizlinkedlistlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA74D44C-4CA0-43DE-BC12-78D7C9A6C1C5}|JOrtizLinkedListLab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jaydee\\Documents\\1# School\\2025 Fall Programs\\JOrtizLinkedListLab\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jaydee\\Documents\\1# School\\2025 Fall Programs\\JOrtizLinkedListLab\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAQwKkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T15:10:11.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
