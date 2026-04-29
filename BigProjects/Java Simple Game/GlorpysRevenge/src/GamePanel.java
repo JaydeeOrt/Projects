@@ -99,9 +99,8 @@ public class GamePanel extends JPanel implements ActionListener
 		}
 		else
 		{
-			//Message Box final message For game end
-			JOptionPane.showMessageDialog(null, "You Earned: " + PointsEarned+ " Points Good Job!" );
-			System.exit(0);
+			//restarts or ends game
+			restartGame();
 		}
 	}
 	
@@ -123,6 +122,25 @@ public class GamePanel extends JPanel implements ActionListener
 		}
 	}
 	
+	//restart or ends game
+	public void restartGame()
+	{
+		int yesNo = JOptionPane.showConfirmDialog(null, "You Earned: " + PointsEarned+ " Points Good Job!" +"\nDo you want to try again?", "Confirm",
+		        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+		if (yesNo == JOptionPane.YES_OPTION) 
+		{
+			Movement.RestartPressed=false;
+			Timer.stop();
+			gameStart();
+		} 
+		else
+		{
+			//Final message For game end
+			JOptionPane.showMessageDialog(null, "Good bye!" );
+			System.exit(0);
+		} 
+	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) 
@@ -138,9 +156,9 @@ public class GamePanel extends JPanel implements ActionListener
 		//Restarts the game if R is pressed
 		if(Movement.RestartPressed==true)
 		{ 
-			Movement.RestartPressed=false;Timer.stop();
-			JOptionPane.showMessageDialog(null, "You Earned: " + PointsEarned+ " Points Good Job!" ); 
-			gameStart();}
+			runCheck=false;
+			restartGame();//restarts or ends game
+		}
 	}
 }
 
