@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jaydee\\Documents\\SummerPrograms\\PythonClass\\SUPPLYOrtiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F85B6BDA-B133-4361-8404-D28ADA9BCA10}|SUPPLYOrtiz.pyproj|C:\\Users\\Jaydee\\Documents\\SummerPrograms\\PythonClass\\SUPPLYOrtiz\\SUPPLYOrtiz.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F85B6BDA-B133-4361-8404-D28ADA9BCA10}|SUPPLYOrtiz.pyproj|solutionrelative:SUPPLYOrtiz.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SUPPLYOrtiz.py",
+              "DocumentMoniker": "C:\\Users\\Jaydee\\Documents\\SummerPrograms\\PythonClass\\SUPPLYOrtiz\\SUPPLYOrtiz.py",
+              "RelativeDocumentMoniker": "SUPPLYOrtiz.py",
+              "ToolTip": "C:\\Users\\Jaydee\\Documents\\SummerPrograms\\PythonClass\\SUPPLYOrtiz\\SUPPLYOrtiz.py",
+              "RelativeToolTip": "SUPPLYOrtiz.py",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-08T19:04:38.927Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

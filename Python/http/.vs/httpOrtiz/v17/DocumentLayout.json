@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jaydee\\Desktop\\httpOrtiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7F25C7-611D-4FBF-95A7-7CB02FB8DF94}|httpOrtiz.pyproj|C:\\Users\\Jaydee\\Desktop\\httpOrtiz\\httpOrtiz.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B7F25C7-611D-4FBF-95A7-7CB02FB8DF94}|httpOrtiz.pyproj|solutionrelative:httpOrtiz.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "httpOrtiz.py",
+              "DocumentMoniker": "C:\\Users\\Jaydee\\Desktop\\httpOrtiz\\httpOrtiz.py",
+              "RelativeDocumentMoniker": "httpOrtiz.py",
+              "ToolTip": "C:\\Users\\Jaydee\\Desktop\\httpOrtiz\\httpOrtiz.py",
+              "RelativeToolTip": "httpOrtiz.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-16T08:57:28.646Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿  JorgeOrtiz-CPT168-Lab-9.cpp
+C:\Users\Jaydee\Desktop\CPT168 Labs\JorgeOrtiz-CPT168-Lab-9\JorgeOrtiz-CPT168-Lab-9.cpp(42,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Jaydee\Desktop\CPT168 Labs\JorgeOrtiz-CPT168-Lab-9\JorgeOrtiz-CPT168-Lab-9.cpp(51,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Jaydee\Desktop\CPT168 Labs\JorgeOrtiz-CPT168-Lab-9\JorgeOrtiz-CPT168-Lab-9.cpp(57,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  JorgeOrtiz-CPT168-Lab-9.vcxproj -> C:\Users\Jaydee\Desktop\CPT168 Labs\JorgeOrtiz-CPT168-Lab-9\x64\Debug\JorgeOrtiz-CPT168-Lab-9.exe
