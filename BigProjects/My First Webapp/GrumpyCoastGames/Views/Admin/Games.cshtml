@@ -1,0 +1,32 @@
+﻿@model List<GrumpyCoastGames.Models.Game>
+
+    <h2>Game Manager</h2>
+
+    <a asp-action="CreateGame" class="btn btn-primary mb-3">+Add New Game</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Stage</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var game in Model)
+        {
+            <tr>
+                <td>@game.Name</td>
+                <td>@game.Stage</td>
+                <td>
+                    <a asp-action="EditGame" asp-route-id="@game.ID" class="btn btn-sm btn-warning">Edit</a>
+                    <form asp-action="DeleteGame" asp-controller="Admin" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@game.ID" />
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+    </table>

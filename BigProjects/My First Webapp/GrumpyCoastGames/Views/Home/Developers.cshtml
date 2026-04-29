@@ -1,0 +1,21 @@
+﻿@model List<GrumpyCoastGames.Models.Developer>
+<h2 style="text-align: center" class="p-4">THIS IS OUR WONDERFUL TEAM</h2>
+<h2 style="text-align: center" class="p-1">↓ MEET THE TEAM ↓</h2>
+<div>
+    @foreach(var devs in Model)
+    {
+        <div>
+            @if (!string.IsNullOrEmpty(devs.Image))
+            {
+                <img src="@devs.Image" class="card-img-top" alt="@devs.Name" style="height: 200px; object-fit: contain;" />
+            }
+            else
+            {
+                <div class="bg-secondary" style="height:300px;"></div>
+            }
+            <h3 style ="text-align: center">@devs.Name</h3>
+            <p style ="text-align: center"><Strong>Role:</Strong> @devs.Position</p>
+            <p style="text-align: center">@devs.Description</p>
+        </div>
+    }
+</div>

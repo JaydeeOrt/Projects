@@ -1,0 +1,36 @@
+﻿@model List<GrumpyCoastGames.Models.AppUser>
+
+    <h2>Admin Panel - Users</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Current Role</th>
+                <th>Action</th>
+             </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                var roles = (ViewBag.UserRoles as Dictionary<string, IList<string>>)[user.Id];
+                <tr>
+                        <td>@user.Email</td>
+                    <td>@string.Join(", ", roles)</td>
+                    <td>@if (!roles.Contains("Admin"))
+                        {
+                            <form asp-action="Promote" asp-controller="Admin" method="post">
+                                <input type="hidden" name ="userID" value="@user.Id"/>
+                                <button type="submit" class="btn btn-sm btn-primary">Promote to admin </button>
+                            </form>
+                        }
+                        else
+                        {
+
+                            <span class="text-muted">Admin</span>
+                        }
+                    </td>
+                </tr>
+            }
+    </tbody>
+    </table>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GrumpyCoastGames</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GrumpyCoastGames.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">GrumpyCoastGames</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="nav flex-column flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Games">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Media">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Developers">Team Members</a>
+                </li>
+
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item mt-3">
+                        <span class="nav-link fw-bold text-muted">Admin</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Admin" asp-action="Index">Manage Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Admin" asp-action="Games">Manage Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Admin" asp-action="Developers">Manage Developers</a>
+                    </li>
+                }
+            </ul>
+
+
+            <div class="mt-auto border-top pt-3"style="color:deepskyblue;">
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </div>
+
+
+    <div style="position: fixed; top: 10px; left: 10px; z-index: 900;">
+        <nav class="navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy; 2026 - GrumpyCoastGames -
+            <a href="https://github.com/GrumpCoastGames" target="_blank">
+                <img src="https://img.favpng.com/7/11/12/github-logo-repository-computer-icons-png-favpng-dPybeZAYFbvSEiHDn0CXk5Yig.jpg" alt="GitHub" height="30" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

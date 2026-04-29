@@ -1,0 +1,32 @@
+﻿@model List<GrumpyCoastGames.Models.Developer>
+
+<h2>Dev Manager</h2>
+
+<a asp-action="AddDeveloper" class="btn btn-primary mb-3">+Add Team Member</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dev in Model)
+        {
+            <tr>
+                <td>@dev.Name</td>
+                <td>@dev.Position</td>
+                <td>
+                    <a asp-action="EditDeveloper" asp-route-id="@dev.ID" class="btn btn-sm btn-warning">Edit</a>
+                    <form asp-action="RemoveDeveloper" asp-controller="Admin" method="post" style="display:inline">
+                        <input type="hidden" name="id" value="@dev.ID" />
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>

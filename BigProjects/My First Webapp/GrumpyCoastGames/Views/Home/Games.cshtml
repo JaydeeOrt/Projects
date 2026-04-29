@@ -1,0 +1,27 @@
+﻿@model List<GrumpyCoastGames.Models.Game>
+<h2 style="text-align: center" class="p-4">THESE ARE GAMES WE ARE WORKING ON</h2>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var game in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                @if (!string.IsNullOrEmpty(game.Image))
+                {
+                    <img src="@game.Image" class="card-img-top" alt="@game.Name" style="height: 200px; object-fit: cover;" />
+                }
+                else
+                {
+                    <div class="bg-secondary" style="height:300px;"></div>
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@game.Name</h5>
+                    <p class="card-text">@game.Description</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">@game.Stage</small>
+                </div>
+            </div>
+        </div>
+    }
+</div>
